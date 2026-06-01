@@ -27,7 +27,7 @@ let rafId = 0;
 
 if (typeof HTMLCanvasElement !== 'undefined') {
   const original = HTMLCanvasElement.prototype.getContext;
-  HTMLCanvasElement.prototype.getContext = function (type: string, ...rest: any[]) {
+  HTMLCanvasElement.prototype.getContext = function (this: HTMLCanvasElement, type: string, ...rest: any[]) {
     if (type === '2d') {
       return {
         setTransform: () => {},

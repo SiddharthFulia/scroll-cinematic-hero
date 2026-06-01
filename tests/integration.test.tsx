@@ -51,8 +51,8 @@ describe('<ScrollCinematicHero/> integration', () => {
     const spy = vi.spyOn(console, 'error').mockImplementation(() => {});
     expect(() =>
       render(
-        // @ts-expect-error testing invalid input
-        <ScrollCinematicHero frameCount={0}>
+        // @ts-expect-error testing invalid input (string instead of number)
+        <ScrollCinematicHero frameCount={'0'}>
           <span>x</span>
         </ScrollCinematicHero>,
       ),
