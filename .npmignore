@@ -1,0 +1,16 @@
+src
+tests
+examples
+docs
+scripts
+.github
+.gitignore
+tsconfig.json
+tsconfig.lib.json
+vite.config.ts
+vite.lib.config.ts
+vitest.config.ts
+CONTRIBUTING.md
+CHANGELOG.md
+*.test.ts
+*.test.tsx

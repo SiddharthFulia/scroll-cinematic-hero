@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-lib
+.DS_Store
+.idea
+.vscode
+*.log
+coverage
+.turbo
+.env
+.env.local
+.cache
+public/hero-frames
